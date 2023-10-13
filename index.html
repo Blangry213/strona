@@ -4,7 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przyczepy na sprzedaż</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Resetowanie stylów i podstawowe stylizacje */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Stylizacja ogłoszeń */
+        .ogloszenia {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .ogloszenie {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .ogloszenie:hover {
+            transform: scale(1.05);
+        }
+
+        .ogloszenie img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .ogloszenie h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .ogloszenie p {
+            margin: 5px 0;
+        }
+
+        /* Stylizacja stopki */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,16 +110,30 @@
 
     <main>
         <section class="ogloszenia">
-            <!-- Przykładowe ogłoszenie -->
+            <!-- Przykładowe ogłoszenia -->
             <div class="ogloszenie">
-                <img src="przyczepa.jpg" alt="Przyczepa do sprzedaży">
-                <h2>Tytuł ogłoszenia</h2>
+                <img src="przyczepa1.jpg" alt="Przyczepa do sprzedaży">
+                <h2>Tytuł ogłoszenia 1</h2>
                 <p>Opis przyczepy na sprzedaż. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p>Cena: 10 000 PLN</p>
                 <p>Lokalizacja: Warszawa</p>
             </div>
 
-            <!-- Dodaj więcej ogłoszeń w podobnym formacie -->
+            <div class="ogloszenie">
+                <img src="przyczepa2.jpg" alt="Przyczepa do sprzedaży">
+                <h2>Tytuł ogłoszenia 2</h2>
+                <p>Opis przyczepy na sprzedaż. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Cena: 8 000 PLN</p>
+                <p>Lokalizacja: Kraków</p>
+            </div>
+
+            <div class="ogloszenie">
+                <img src="przyczepa3.jpg" alt="Przyczepa do sprzedaży">
+                <h2>Tytuł ogłoszenia 3</h2>
+                <p>Opis przyczepy na sprzedaż. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Cena: 12 000 PLN</p>
+                <p>Lokalizacja: Gdańsk</p>
+            </div>
         </section>
     </main>
 
